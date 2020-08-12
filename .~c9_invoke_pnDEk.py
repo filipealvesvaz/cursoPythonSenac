@@ -20,8 +20,7 @@ def validar_cpf(cpf):
         
          digito1 =  (soma * 10) % 11
          
-         if digito1 == 10:
-             digito1 = 0
+         
         
          if digito1 != int(cpf_limpo[9]):
             return False
@@ -34,9 +33,6 @@ def validar_cpf(cpf):
                 contador -= 1
                 
          digito2 = (soma * 10) % 11
-         
-         if digito2 == 10:
-            digito2 = 0
         
          if digito2 != int(cpf_limpo[10]):
             return False
